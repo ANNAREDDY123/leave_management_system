@@ -1,4 +1,4 @@
--- 1. Employees with highest number of leaves
+--- 1. Employees with highest number of leaves
 
 SELECT e.name,
        COUNT(l.leave_id) AS total_leaves
