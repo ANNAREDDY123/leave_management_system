@@ -1,0 +1,43 @@
+{
+  "info": {
+    "name": "Leave Management System",
+    "description": "Postman Collection for Leave Management APIs"
+  },
+  "item": [
+    {
+      "name": "Home",
+      "request": {
+        "method": "GET",
+        "url": "http://127.0.0.1:8000/"
+      }
+    },
+    {
+      "name": "Add Employee",
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8000/employees"
+      }
+    },
+    {
+      "name": "View Employees",
+      "request": {
+        "method": "GET",
+        "url": "http://127.0.0.1:8000/employees"
+      }
+    },
+    {
+      "name": "Apply Leave",
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8000/leave"
+      }
+    },
+    {
+      "name": "View Leave Requests",
+      "request": {
+        "method": "GET",
+        "url": "http://127.0.0.1:8000/leaves"
+      }
+    }
+  ]
+}
