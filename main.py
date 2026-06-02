@@ -8,7 +8,6 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Leave Management System")
 
-
 @app.get("/")
 def home():
     return {"message": "Leave Management System API Running"}
@@ -82,8 +81,7 @@ def get_employee(employee_id: int, db: Session = Depends(get_db)):
 def update_employee(
     employee_id: int,
     employee: schemas.EmployeeUpdate,
-    db: Session = Depends(get_db)
-):
+    db: Session = Depends(get_db)):
 
     db_employee = db.query(models.Employee).filter(
         models.Employee.employee_id == employee_id
